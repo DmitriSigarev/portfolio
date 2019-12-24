@@ -1,0 +1,94 @@
+body{
+  background-image: url(fon.jpg)
+}
+
+.block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+
+}
+
+.income{
+  width: 40%;
+  height: 370px;
+  border-radius: 7px;
+  text-align:center;
+  padding-top: 25px;
+  border:3px solid;
+}
+.outcome{
+  width: 40%;
+  height: 370px;
+  border-radius: 7px;
+  text-align:center;
+  padding-top: 25px;
+  margin-left: 7px;
+  display: inline-block;
+  border:3px solid;
+  
+}
+
+.bank{
+  width:20%;
+  height: 395px;
+  border-radius: 7px;
+  text-align:center;
+  margin-left: 7px;
+  align-self: center;
+  border:3px solid;
+}
+
+.list{
+  width: 75%;
+  height: 420px;
+  border-radius: 7px;
+  margin-top: 7px;
+  overflow-y:scroll;
+  border:3px solid;
+}
+
+.pig{
+  margin-left: 5px;
+  width: 25%;
+  height: 420px;
+  border-radius: 7px;
+  margin-top: 7px;
+  text-align:center;
+  border:3px solid;
+}
+
+.btn {
+  margin-top: 50px;
+ }
+
+ #addSallary, #outSallary{
+  height: 35px;
+  width: 75px;
+  border-radius: 15px;
+
+ }
+iframe{
+  width:100%;
+  border:1px;
+  border-radius:3px;
+
+  overflow:hidden;
+  background-color:transparent;
+  height:60px;
+}
+
+#pigIn, #addInPig{
+  margin:15px;
+}
+
+#delete{
+  border-radius:5px;
+}
+
