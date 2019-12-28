@@ -7,13 +7,19 @@ let piggyBankUp = null;
 
 document.getElementById('addSallary').addEventListener('click', function (){
 	let money = document.getElementById('sallary').value;
-	moneyUp =money;
-	number += +money;
-	document.getElementById('Cash').textContent = number;
-	if(number>=0){
+	if(!isFinite(money)){
+		document.getElementById('sallary').style.borderColor = 'red';
+	}else{
+		moneyUp =money;
+		number += +money;
+		document.getElementById('Cash').textContent = number;
+		if(number>=0){
 		document.getElementById('koshel').style.color = ''
 		document.getElementById('kazna').textContent = ''
+		document.getElementById('sallary').style.borderColor = '';
 	}
+	}
+	
 	
 })
 
@@ -21,13 +27,19 @@ document.getElementById('addSallary').addEventListener('click', function (){
 //расход в цифрах
 document.getElementById('outSallary').addEventListener('click',function(){
 	const outInput = document.getElementById('outComing').value;
-	moneyDown = +outInput;
-	number -= +outInput;
-	document.getElementById('Cash').textContent = number;
-	if(number<0){
+	if(!isFinite(outInput)){
+		document.getElementById('outComing').style.borderColor = 'red';
+	}else{
+		moneyDown = +outInput;
+		number -= +outInput;
+		document.getElementById('Cash').textContent = number;
+		if(number<0){
 		document.getElementById('koshel').style.color = 'red'
 		document.getElementById('kazna').textContent = 'Казна пустеет Милорд...'
+		document.getElementById('outComing').style.borderColor = '';
 	}
+	}
+	
 
 })
 
